@@ -6,7 +6,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const API_URL = process.env.REACT_APP_API_URL || 'http://budget-tracker.duckdns.org:5000';
+  const API_URL = process.env.REACT_APP_API_URL || 'https://budget-tracker.duckdns.org:5000';
 
   const handleLogin = async (e) => {
     e.preventDefault();

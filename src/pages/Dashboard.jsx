@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [transactions, setTransactions] = useState([]);
   const navigate = useNavigate();
 
-  const API_URL = process.env.REACT_APP_API_URL || 'http://budget-tracker.duckdns.org:5000';
+  const API_URL = process.env.REACT_APP_API_URL || 'https://budget-tracker.duckdns.org:5000';
 
   useEffect(() => {
     const fetchData = async () => {
