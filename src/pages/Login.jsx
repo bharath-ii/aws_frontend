@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import '../App.css'
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const API_URL = process.env.REACT_APP_API_URL || 'https://budget-tracker.duckdns.org:5000';
+const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').replace(/\/+$/, '');
+
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -88,7 +91,7 @@ const inputStyle = {
 
 const buttonStyle = {
   padding: '10px',
-  backgroundColor: '#007bff',
+  backgroundColor: '#008000',
   color: '#fff',
   fontSize: '16px',
   border: 'none',

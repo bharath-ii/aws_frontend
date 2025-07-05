@@ -5,6 +5,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import AddTransaction from './pages/AddTransaction';
+import Transactions from './pages/Transactions';
+
 
 import './App.css';
 
@@ -16,6 +18,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/add" element={<AddTransaction />} />
+        <Route path="/transactions" element={<Transactions />} />
       </Routes>
     </Router>
   );
