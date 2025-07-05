@@ -6,7 +6,7 @@ export default function Register() {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const navigate = useNavigate();
 
-const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').replace(/\/+$/, '');
+const API_URL = (process.env.REACT_APP_API_URL || 'https://aws-backend-w27i.onrender.com').replace(/\/+$/, '');
 
 
   const handleRegister = async (e) => {

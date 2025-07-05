@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
   const navigate = useNavigate();
-  const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').replace(/\/+$/, '');
+  const API_URL = (process.env.REACT_APP_API_URL || 'https://aws-backend-w27i.onrender.com').replace(/\/+$/, '');
 
   useEffect(() => {
     const fetchData = async () => {

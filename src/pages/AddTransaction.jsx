@@ -12,7 +12,7 @@ export default function AddTransaction() {
 
   const [editId, setEditId] = useState(null);
   const navigate = useNavigate();
-const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').replace(/\/+$/, '');
+const API_URL = (process.env.REACT_APP_API_URL || 'https://aws-backend-w27i.onrender.com').replace(/\/+$/, '');
   console.log(API_URL); 
 
   // ✅ Check if token exists
